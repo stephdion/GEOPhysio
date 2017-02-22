@@ -1,0 +1,11 @@
+<div>
+
+  <entreprises-form></entreprises-form>
+  <ul>
+    <li *ngFor="let entreprise of entreprises  | async">
+      {{entreprise.nom}}
+      <p>{{entreprise.description}}</p>
+      <p>{{entreprise.territoire}}</p>
+    </li>
+  </ul>
+</div>
